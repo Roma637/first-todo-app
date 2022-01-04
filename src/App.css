@@ -1,0 +1,21 @@
+/* .todostuff {
+  padding:3rem;
+  justify-content: center;
+  align-items: flex-start;
+  display:flex;
+}
+.add1 { flex-shrink:1;}
+
+html {
+  background-color: skyblue;
+} */
+
+.todostuff { margin-left : 200px; margin-top: 200px;}
+.button-container { margin-top : 20px;}
+.delete1 { margin-left : 20px;}
+/* .title1 { filter :drop-shadow(5px 5px 3px 5px rgb(255 0 0)) } */
+.title1 { 
+  text-shadow: 5px 5px 5px   slateblue; 
+  box-shadow: 5px 5px 5px 5px lightcoral;
+  width: 150px;
+}
