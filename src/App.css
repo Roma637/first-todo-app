@@ -10,12 +10,34 @@ html {
   background-color: skyblue;
 } */
 
-.todostuff { margin-left : 200px; margin-top: 200px;}
-.button-container { margin-top : 20px;}
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+.todostuff { margin-left : 350px;   }
+.spacer-div { height: 100px; }
+.button-container { margin-top : 30px;}
+.input-todo { margin-top : 30px;}
 .delete1 { margin-left : 20px;}
+.todotext { 
+  font-family: 'Work Sans', sans-serif;
+  font-size : 1.5rem;
+  
+}
 /* .title1 { filter :drop-shadow(5px 5px 3px 5px rgb(255 0 0)) } */
+
+html {
+  background-image: url("../public/logo192.png");
+  transform: rotate(-15deg);
+  background-color: rgba(228, 19, 141, 0.5);
+}
+
+#MyApp {
+  height: 100vh;
+  background-image: linear-gradient(135deg, rgba(255,0,0,0.8),rgba(0,255,0, 0.8));
+
+}
+
 .title1 { 
-  text-shadow: 5px 5px 5px   slateblue; 
-  box-shadow: 5px 5px 5px 5px lightcoral;
-  width: 150px;
+  font-family: 'Work Sans', sans-serif;
+  text-shadow: 10px 10px 5px   rgb(49, 19, 221); 
+  font-size : 5rem;
 }

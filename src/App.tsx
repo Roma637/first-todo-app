@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
 
-  const [todos, setTodos] = useState<any[]>([])
+  const [todos, setTodos] = useState<any[]>([{id : v4(), name : "Buy Milk", complete :false}, {id : v4(), name : "Learn React", complete :false}])
   const content:any = useRef()
 
   const handleAdd = () => {
@@ -42,15 +42,18 @@ function App() {
   }
 
   return (
-    <div className="App">
-      
+    <div id="MyApp" className="App">
+      <div className='spacer-div'></div>
       <div className="todostuff" >
         <h1 className='title1'>Todo List</h1>
         <TodoList className="todolist" todos={todos} toggle={handleToggle}/>
-        <div><input className="text1" type="text" ref={content} /></div>
+        <div className="input-todo"> 
+          <span>Todo : </span>
+          <input className="text1" type="text" ref={content} />
+        </div>
         <div className="button-container">
-          <input className="add1" type="button" value="add todo" onClick={handleAdd} />
-          <input className="delete1" type="button" value="delete completed todos" onClick={handleDelete} />
+          <input className="add1" type="button" value="Add Todo" onClick={handleAdd} />
+          <input className="delete1" type="button" value="Delete Completed Todos" onClick={handleDelete} />
         </div>
       </div>
 
